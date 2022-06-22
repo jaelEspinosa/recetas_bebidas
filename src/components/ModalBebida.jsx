@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Modal, Image, Col, Row }from 'react-bootstrap'
+import { Modal, Image, Col, Row, Button }from 'react-bootstrap'
 import useBebidas from '../hooks/useBebidas'
 import Spinner from './Spinner'
 import '../styles/BebidaModal.css'
@@ -51,7 +51,11 @@ const ModalBebida = () => {
                 
                    {mostrarIngredientes()}
                  
-                  
+                  <Button 
+                      variant='danger' 
+                      className='mt-4'
+                      onClick={handleModalClick}
+                                     >Atrás</Button>
                </div>
 
         </Modal.Body>
