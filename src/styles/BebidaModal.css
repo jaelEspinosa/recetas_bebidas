@@ -1,0 +1,11 @@
+.ingredientes{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:6rem;
+    
+}
+
+.img{
+    width: 50px;
+}
