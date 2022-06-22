@@ -15,7 +15,7 @@ const ModalBebida = () => {
             let urlImgIngrediente = `https://www.thecocktaildb.com/images/ingredients/${ingredienteImg}-Small.png`
             
             ingredientes.push(  
-                <Row className='border' > 
+                <Row key = {i} className='border text-center' > 
 
                <Col >{receta[`strIngredient${i}`]}</Col>
                <Col ><img className='img'src={urlImgIngrediente} alt='miniatura ingrediente'/></Col>
